@@ -1,4 +1,6 @@
 *reply 테이블생성*
+
+```sql
 REATE TABLE `opgg`.`reply` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `postid` INT NULL,
@@ -6,10 +8,10 @@ REATE TABLE `opgg`.`reply` (
   `reply` VARCHAR(100) NULL,
   `createDate` TIMESTAMP NULL,
   PRIMARY KEY (`id`));
-
+```
   
  *post 테이블생성*
- # Table	Create Table
+ ```sql
  CREATE TABLE `post` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) DEFAULT NULL,
@@ -20,9 +22,10 @@ REATE TABLE `opgg`.`reply` (
   `viewcount` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8
- 
+ ```
  
  *user 테이블생성*
+ ```sql
  CREATE TABLE `opgg`.`user` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(45) NOT NULL,
@@ -32,3 +35,4 @@ REATE TABLE `opgg`.`reply` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
+```
